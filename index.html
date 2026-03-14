@@ -133,14 +133,15 @@
       /* HERO */
 
       .hero {
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        /* background: url('https://dongkrakusaha.com/gambarbebas/1526720260315-120153_hero.png') */
+
         background: url('https://lh3.googleusercontent.com/p/AF1QipPJgPqEBzarccfldeKOebBzyi6YTqQ5-KOQ-Hir=s1600')
           center/cover no-repeat;
         position: relative;
+        padding-top: 80px;
       }
 
       .hero::before {
@@ -148,27 +149,74 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.65);
+        background: rgba(0, 0, 0, 0.7);
+      }
+
+      .hero-container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        width: 100%;
       }
 
       .hero-content {
-        position: relative;
-        max-width: 700px;
+        flex: 1;
+        text-align: left;
+        max-width: 600px;
       }
 
       .hero h1 {
-        font-size: 48px;
+        font-size: 56px;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        background: linear-gradient(to right, #ffffff, #ffb300);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       .hero p {
+        font-size: 18px;
         margin-bottom: 30px;
+        color: #e0e0e0;
       }
 
       .hero-buttons {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 20px;
         flex-wrap: wrap;
+      }
+
+      .hero-image {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .hero-image img {
+        width: 100%;
+        max-width: 480px;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        border: 3px solid rgba(255, 179, 0, 0.4);
+        animation: floating 4s ease-in-out infinite;
+      }
+
+      @keyframes floating {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
       }
 
       /* ABOUT */
@@ -390,8 +438,32 @@
           display: block;
         }
 
+        .hero {
+          padding-top: 100px;
+          padding-bottom: 60px;
+          height: auto;
+        }
+
+        .hero-container {
+          flex-direction: column;
+          text-align: center;
+          gap: 30px;
+        }
+
+        .hero-content {
+          text-align: center;
+        }
+
         .hero h1 {
-          font-size: 34px;
+          font-size: 38px;
+        }
+
+        .hero-buttons {
+          justify-content: center;
+        }
+
+        .hero-image {
+          justify-content: center;
         }
 
         .contact-grid {
@@ -430,22 +502,31 @@
     <!-- HERO -->
 
     <section class="hero">
-      <div class="hero-content" data-aos="fade-up">
-        <h1>Barbershop Premium di Depok</h1>
+      <div class="container hero-container">
+        <div class="hero-content" data-aos="fade-right">
+          <h1>Barbershop Premium di Depok</h1>
 
-        <p>
-          Haircut modern, clean shave, dan pelayanan profesional dengan rating
-          ⭐ 5.0 dari pelanggan.
-        </p>
+          <p>
+            Haircut modern, clean shave, dan pelayanan profesional dengan rating
+            ⭐ 5.0 dari pelanggan.
+          </p>
 
-        <div class="hero-buttons">
-          <a
-            href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20&%20Shave%2C%20saya%20ingin%20booking%20sekarang."
-            class="cta-btn"
-            target="_blank"
-          >
-            <i class="fab fa-whatsapp"></i> Booking Sekarang
-          </a>
+          <div class="hero-buttons">
+            <a
+              href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20&%20Shave%2C%20saya%20ingin%20booking%20sekarang."
+              class="cta-btn"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i> Booking Sekarang
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image" data-aos="fade-left">
+          <img
+            src="https://lh3.googleusercontent.com/p/AF1QipPffwbrmOfxJVpy4seRDgxdyMxKT2oHscJ-dqt4=s677-k"
+            alt="Don Antonio Haircut"
+          />
         </div>
       </div>
     </section>
