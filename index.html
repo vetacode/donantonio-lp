@@ -67,8 +67,35 @@
       }
 
       .logo {
-        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
         font-weight: bold;
+      }
+
+      .logo h2 {
+        align-items: center;
+      }
+
+      /* LOGO */
+
+      .logo img {
+        height: 50px;
+        border-radius: 50%;
+      }
+
+      .about-logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      .footer-logo {
+        width: 60px;
+        border-radius: 50%;
+        margin-bottom: 10px;
       }
 
       .menu {
@@ -339,8 +366,13 @@
 
     <div class="navbar">
       <div class="container">
-        <div class="logo">Don Antonio</div>
-
+        <div class="logo">
+          <img
+            src="https://dongkrakusaha.com/gambarbebas/1526720260314-113355_donantonio barbershop.png"
+            alt="Don Antonio Barbershop"
+          />
+          <h2>Don Antonio</h2>
+        </div>
         <div class="menu" id="menu">
           <a href="#">Home</a>
           <a href="#about">About</a>
@@ -382,6 +414,10 @@
 
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
+        <img
+          class="about-logo"
+          src="https://dongkrakusaha.com/gambarbebas/1526720260314-113355_donantonio barbershop.png"
+        />
         <h2>About Don Antonio</h2>
 
         <p>
@@ -516,24 +552,48 @@
       <div class="container">
         <div class="footer-grid">
           <div>
-            <h3>Don Antonio Barbershop</h3>
+            <img
+              class="footer-logo"
+              src="https://dongkrakusaha.com/gambarbebas/1526720260314-113355_donantonio barbershop.png"
+            />
+
+            <h3>Don Antonio Haircut & Shave</h3>
+
             <p>
-              Barbershop profesional di Depok dengan layanan haircut modern dan
-              shaving terbaik.
+              Barbershop profesional di Depok dengan layanan haircut modern,
+              hair styling, dan shaving terbaik dengan rating pelanggan ⭐5.0.
             </p>
           </div>
 
           <div class="footer-menu">
             <h4>Menu</h4>
+
             <a href="#">Home</a>
-            <a href="#about">About</a>
+            <a href="#about">Tentang Kami</a>
             <a href="#services">Layanan</a>
             <a href="#gallery">Gallery</a>
+            <a href="#contact">Kontak</a>
+          </div>
+
+          <div class="footer-menu">
+            <h4>Kontak</h4>
+
+            <a
+              href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20&%20Shave%2C%20saya%20ingin%20booking%20sekarang."
+              target="_blank"
+              class="cta-btn"
+            >
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <a href="https://instagram.com">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
           </div>
         </div>
 
         <div class="copy">
-          © 2026 Don Antonio Haircut & Shave. All Rights Reserved.
+          © 2026 Don Antonio Haircut & Shave All Rights Reserved.
         </div>
       </div>
     </footer>
