@@ -247,6 +247,38 @@
         margin-bottom: 10px;
       }
 
+      .review-slider {
+        overflow: hidden;
+        margin-top: 40px;
+      }
+
+      .review-track {
+        display: flex;
+        gap: 20px;
+        animation: scrollReview 30s linear infinite;
+      }
+
+      .review-card {
+        min-width: 300px;
+        background: #1d1d1d;
+        padding: 25px;
+        border-radius: 10px;
+        text-align: left;
+      }
+
+      .review-card p {
+        margin: 10px 0;
+      }
+
+      @keyframes scrollReview {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
       /* CONTACT */
 
       .contact-grid {
@@ -282,6 +314,12 @@
         color: #ccc;
         text-decoration: none;
         margin-bottom: 10px;
+        transition: 0.3s;
+        font-size: 16px;
+      }
+
+      .footer-menu a:hover {
+        color: #ffb300;
       }
 
       .copy {
@@ -491,30 +529,69 @@
 
     <section class="testimonials">
       <div class="container">
-        <h2 data-aos="fade-up">Testimoni Pelanggan</h2>
+        <h2 data-aos="fade-up">Review Pelanggan</h2>
 
-        <div class="testimonial-grid">
-          <div class="testimonial" data-aos="fade-up">
-            <div class="stars">★★★★★</div>
-            <p>Barbernya ramah dan hasil potongannya rapi.</p>
-            <strong>Andi</strong>
-          </div>
+        <div class="review-slider" data-aos="fade-up">
+          <div class="review-track">
+            <div class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                Masny ramah tamah. Potongan ny cakep sangat puas sama hasilnya.
+              </p>
+              <strong>Masber Officiall</strong>
+            </div>
 
-          <div class="testimonial" data-aos="fade-up">
-            <div class="stars">★★★★★</div>
-            <p>Tempat nyaman dan barber profesional.</p>
-            <strong>Rizky</strong>
-          </div>
+            <div class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                Jujur puas banget. Potongannya rapi, layernya pas, dan pas
+                distyling di rumah pun tetap gampang diatur.
+              </p>
+              <strong>Muhammad Ihsan Zaini</strong>
+            </div>
 
-          <div class="testimonial" data-aos="fade-up">
-            <div class="stars">★★★★★</div>
-            <p>Haircut terbaik di Depok.</p>
-            <strong>Dimas</strong>
+            <div class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>Keren banget. Recommended banget buat hair coloring.</p>
+              <strong>Ahmad Jabbar</strong>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                Kapster berpengalaman dan tau berbagai macam model gaya rambut.
+                Asik juga orangnya.
+              </p>
+              <strong>Jihan Maulana</strong>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                Untuk pelayanan oke banget. Tau segala model potongan rambut
+                terkini.
+              </p>
+              <strong>Mbuy Arbani</strong>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>Potongan bagus sesuai dengan kemauan saya. Comma X Wolf.</p>
+              <strong>Henky Bong</strong>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                Good job untuk potongan rambutnya. Anak-anak sama suami jadi
+                ganteng.
+              </p>
+              <strong>Ng Syifa</strong>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- CONTACT -->
 
     <section id="contact">
@@ -582,12 +659,14 @@
             <a
               href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20&%20Shave%2C%20saya%20ingin%20booking%20sekarang."
               target="_blank"
-              class="cta-btn"
             >
               <i class="fab fa-whatsapp"></i> WhatsApp
             </a>
 
-            <a href="https://instagram.com">
+            <a
+              href="https://www.instagram.com/donantonio_barberstudio/"
+              target="_blank"
+            >
               <i class="fab fa-instagram"></i> Instagram
             </a>
           </div>
