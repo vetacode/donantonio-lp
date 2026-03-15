@@ -11,6 +11,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <style>
       * {
@@ -371,24 +375,24 @@
       }
 
       .review-slider {
-        overflow: hidden;
         margin-top: 40px;
+        padding-bottom: 50px;
+        position: relative;
+        cursor: grab;
       }
 
-      .review-track {
-        display: flex;
-        gap: 20px;
-        animation: scrollReview 30s linear infinite;
+      .review-slider:active {
+        cursor: grabbing;
       }
 
       .review-card {
-        min-width: 320px;
         background: #141414;
         padding: 30px;
         border-radius: 16px;
         text-align: left;
         border: 1px solid #222;
         transition: all 0.4s ease;
+        height: auto;
       }
 
       .review-card:hover {
@@ -399,6 +403,18 @@
 
       .review-card p {
         margin: 10px 0;
+      }
+
+      .swiper-pagination-bullet {
+        background: #444;
+        opacity: 1;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: #ffb300;
+        width: 30px;
+        border-radius: 5px;
+        transition: width 0.3s ease;
       }
 
       @keyframes scrollReview {
@@ -1037,9 +1053,9 @@
       <div class="container">
         <h2 data-aos="fade-up">Review Pelanggan</h2>
 
-        <div class="review-slider" data-aos="fade-up">
-          <div class="review-track">
-            <div class="review-card">
+        <div class="swiper review-slider" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide review-card">
               <div class="stars">★★★★★</div>
               <p>
                 Masny ramah tamah. Potongan ny cakep sangat puas sama hasilnya.
@@ -1047,7 +1063,7 @@
               <strong>Masber Officiall</strong>
             </div>
 
-            <div class="review-card">
+            <div class="swiper-slide review-card">
               <div class="stars">★★★★★</div>
               <p>
                 Jujur puas banget. Potongannya rapi, layernya pas, dan pas
@@ -1056,13 +1072,13 @@
               <strong>Muhammad Ihsan Zaini</strong>
             </div>
 
-            <div class="review-card">
+            <div class="swiper-slide review-card">
               <div class="stars">★★★★★</div>
               <p>Keren banget. Recommended banget buat hair coloring.</p>
               <strong>Ahmad Jabbar</strong>
             </div>
 
-            <div class="review-card">
+            <div class="swiper-slide review-card">
               <div class="stars">★★★★★</div>
               <p>
                 Kapster berpengalaman dan tau berbagai macam model gaya rambut.
@@ -1071,7 +1087,7 @@
               <strong>Jihan Maulana</strong>
             </div>
 
-            <div class="review-card">
+            <div class="swiper-slide review-card">
               <div class="stars">★★★★★</div>
               <p>
                 Untuk pelayanan oke banget. Tau segala model potongan rambut
@@ -1080,13 +1096,13 @@
               <strong>Mbuy Arbani</strong>
             </div>
 
-            <div class="review-card">
+            <div class="swiper-slide review-card">
               <div class="stars">★★★★★</div>
               <p>Potongan bagus sesuai dengan kemauan saya. Comma X Wolf.</p>
               <strong>Henky Bong</strong>
             </div>
 
-            <div class="review-card">
+            <div class="swiper-slide review-card">
               <div class="stars">★★★★★</div>
               <p>
                 Good job untuk potongan rambutnya. Anak-anak sama suami jadi
@@ -1095,6 +1111,7 @@
               <strong>Ng Syifa</strong>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -1206,11 +1223,35 @@
     </a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
       AOS.init({
         duration: 1000,
         once: true,
+      });
+
+      // Initialize Swiper
+      const swiper = new Swiper('.review-slider', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
       });
 
       function toggleMenu() {
