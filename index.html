@@ -269,26 +269,36 @@
         margin-bottom: 10px;
       }
 
+      .service-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        gap: 10px;
+      }
+
       .service-price {
         font-size: 24px;
         font-weight: 700;
         color: #ffb300;
-        margin-top: 20px;
       }
 
-      .services-cta {
-        margin-top: 60px;
-        text-align: center;
+      .service-cta-btn {
+        background: rgba(255, 179, 0, 0.1);
+        color: #ffb300;
+        border: 1px solid rgba(255, 179, 0, 0.3);
+        padding: 8px 16px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease;
       }
 
-      .services-cta .cta-btn {
-        font-size: 18px;
-        padding: 15px 30px;
-        box-shadow: 0 10px 20px rgba(255, 179, 0, 0.2);
-      }
-
-      .services-cta .cta-btn:hover {
-        box-shadow: 0 15px 30px rgba(255, 179, 0, 0.4);
+      .service-cta-btn:hover {
+        background: #ffb300;
+        color: #000;
+        transform: translateY(-2px);
       }
 
       .service:hover {
@@ -729,7 +739,15 @@
               <i class="fa-solid fa-scissors"></i>
               <h3>Haircut Men's Only</h3>
             </div>
-            <div class="service-price">45k</div>
+            <div class="service-footer">
+              <div class="service-price">45k</div>
+              <a
+                href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20%26%20Shave%2C%20saya%20ingin%20booking%20layanan%20Haircut%20Men's%20Only%20sekarang."
+                class="service-cta-btn"
+                target="_blank"
+                >Booking</a
+              >
+            </div>
           </div>
 
           <!-- Item 2 -->
@@ -738,7 +756,15 @@
               <i class="fa-solid fa-shower"></i>
               <h3>Haircut Men's + Shampoo</h3>
             </div>
-            <div class="service-price">50k</div>
+            <div class="service-footer">
+              <div class="service-price">50k</div>
+              <a
+                href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20%26%20Shave%2C%20saya%20ingin%20booking%20layanan%20Haircut%20Men's%20%2B%20Shampoo%20sekarang."
+                class="service-cta-btn"
+                target="_blank"
+                >Booking</a
+              >
+            </div>
           </div>
 
           <!-- Item 3 -->
@@ -747,7 +773,15 @@
               <i class="fa-solid fa-child"></i>
               <h3>Haircut Kids Only</h3>
             </div>
-            <div class="service-price">40k</div>
+            <div class="service-footer">
+              <div class="service-price">40k</div>
+              <a
+                href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20%26%20Shave%2C%20saya%20ingin%20booking%20layanan%20Haircut%20Kids%20Only%20sekarang."
+                class="service-cta-btn"
+                target="_blank"
+                >Booking</a
+              >
+            </div>
           </div>
 
           <!-- Item 4 -->
@@ -756,7 +790,15 @@
               <i class="fa-solid fa-sink"></i>
               <h3>Haircut Kids + Shampoo</h3>
             </div>
-            <div class="service-price">45k</div>
+            <div class="service-footer">
+              <div class="service-price">45k</div>
+              <a
+                href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20%26%20Shave%2C%20saya%20ingin%20booking%20layanan%20Haircut%20Kids%20%2B%20Shampoo%20sekarang."
+                class="service-cta-btn"
+                target="_blank"
+                >Booking</a
+              >
+            </div>
           </div>
 
           <!-- Item 5 -->
@@ -765,7 +807,15 @@
               <i class="fa-solid fa-paintbrush"></i>
               <h3>Black Polish</h3>
             </div>
-            <div class="service-price">50k</div>
+            <div class="service-footer">
+              <div class="service-price">50k</div>
+              <a
+                href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20%26%20Shave%2C%20saya%20ingin%20booking%20layanan%20Black%20Polish%20sekarang."
+                class="service-cta-btn"
+                target="_blank"
+                >Booking</a
+              >
+            </div>
           </div>
 
           <!-- Item 6 -->
@@ -774,7 +824,15 @@
               <i class="fa-solid fa-face-smile"></i>
               <h3>Shaves Beard</h3>
             </div>
-            <div class="service-price">20k</div>
+            <div class="service-footer">
+              <div class="service-price">20k</div>
+              <a
+                href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20%26%20Shave%2C%20saya%20ingin%20booking%20layanan%20Shaves%20Beard%20sekarang."
+                class="service-cta-btn"
+                target="_blank"
+                >Booking</a
+              >
+            </div>
           </div>
 
           <!-- Item 7 -->
@@ -783,63 +841,126 @@
               <i class="fa-solid fa-spa"></i>
               <h3>Hair Treatment Creambath</h3>
             </div>
-            <div class="service-price">50k</div>
+            <div class="service-footer">
+              <div class="service-price">50k</div>
+              <a
+                href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20%26%20Shave%2C%20saya%20ingin%20booking%20layanan%20Hair%20Treatment%20Creambath%20sekarang."
+                class="service-cta-btn"
+                target="_blank"
+                >Booking</a
+              >
+            </div>
           </div>
 
           <!-- Item 8 -->
           <div class="service" data-aos="zoom-in" data-aos-delay="100">
             <div class="service-content">
               <i class="fa-solid fa-water"></i>
-              <h3>Hair Perming<br><span style="font-size: 14px; font-weight: normal; color: #aaa;">(Include Cuts)</span></h3>
+              <h3>
+                Hair Perming<br /><span
+                  style="font-size: 14px; font-weight: normal; color: #aaa"
+                  >(Include Cuts)</span
+                >
+              </h3>
             </div>
-            <div class="service-price">300k</div>
+            <div class="service-footer">
+              <div class="service-price">300k</div>
+              <a
+                href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20%26%20Shave%2C%20saya%20ingin%20booking%20layanan%20Hair%20Perming%20sekarang."
+                class="service-cta-btn"
+                target="_blank"
+                >Booking</a
+              >
+            </div>
           </div>
 
           <!-- Item 9 -->
           <div class="service" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-content">
               <i class="fa-solid fa-palette"></i>
-              <h3>Hair Color Full<br><span style="font-size: 14px; font-weight: normal; color: #aaa;">(Include Cuts)</span></h3>
+              <h3>
+                Hair Color Full<br /><span
+                  style="font-size: 14px; font-weight: normal; color: #aaa"
+                  >(Include Cuts)</span
+                >
+              </h3>
             </div>
-            <div class="service-price">350k</div>
+            <div class="service-footer">
+              <div class="service-price">350k</div>
+              <a
+                href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20%26%20Shave%2C%20saya%20ingin%20booking%20layanan%20Hair%20Color%20Full%20sekarang."
+                class="service-cta-btn"
+                target="_blank"
+                >Booking</a
+              >
+            </div>
           </div>
 
           <!-- Item 10 -->
           <div class="service" data-aos="zoom-in">
             <div class="service-content">
               <i class="fa-solid fa-star"></i>
-              <h3>Hair Color Highlight<br><span style="font-size: 14px; font-weight: normal; color: #aaa;">(Include Cuts)</span></h3>
+              <h3>
+                Hair Color Highlight<br /><span
+                  style="font-size: 14px; font-weight: normal; color: #aaa"
+                  >(Include Cuts)</span
+                >
+              </h3>
             </div>
-            <div class="service-price">400k</div>
+            <div class="service-footer">
+              <div class="service-price">400k</div>
+              <a
+                href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20%26%20Shave%2C%20saya%20ingin%20booking%20layanan%20Hair%20Color%20Highlight%20sekarang."
+                class="service-cta-btn"
+                target="_blank"
+                >Booking</a
+              >
+            </div>
           </div>
 
           <!-- Item 11 -->
           <div class="service" data-aos="zoom-in" data-aos-delay="100">
             <div class="service-content">
               <i class="fa-solid fa-bolt"></i>
-              <h3>Hair Bleaching Highlight<br><span style="font-size: 14px; font-weight: normal; color: #aaa;">(Include Cuts)</span></h3>
+              <h3>
+                Hair Bleaching Highlight<br /><span
+                  style="font-size: 14px; font-weight: normal; color: #aaa"
+                  >(Include Cuts)</span
+                >
+              </h3>
             </div>
-            <div class="service-price">350k</div>
+            <div class="service-footer">
+              <div class="service-price">350k</div>
+              <a
+                href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20%26%20Shave%2C%20saya%20ingin%20booking%20layanan%20Hair%20Bleaching%20Highlight%20sekarang."
+                class="service-cta-btn"
+                target="_blank"
+                >Booking</a
+              >
+            </div>
           </div>
 
           <!-- Item 12 -->
           <div class="service" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-content">
               <i class="fa-solid fa-sun"></i>
-              <h3>Hair Bleaching Full<br><span style="font-size: 14px; font-weight: normal; color: #aaa;">(Include Cuts)</span></h3>
+              <h3>
+                Hair Bleaching Full<br /><span
+                  style="font-size: 14px; font-weight: normal; color: #aaa"
+                  >(Include Cuts)</span
+                >
+              </h3>
             </div>
-            <div class="service-price">300k</div>
+            <div class="service-footer">
+              <div class="service-price">300k</div>
+              <a
+                href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20%26%20Shave%2C%20saya%20ingin%20booking%20layanan%20Hair%20Bleaching%20Full%20sekarang."
+                class="service-cta-btn"
+                target="_blank"
+                >Booking</a
+              >
+            </div>
           </div>
-        </div>
-
-        <div class="services-cta" data-aos="fade-up">
-          <a
-            href="https://wa.me/628132150075?text=Halo%20Don%20Antonio%20Haircut%20&%20Shave%2C%20saya%20ingin%20booking%20sekarang."
-            class="cta-btn"
-            target="_blank"
-          >
-            <i class="fab fa-whatsapp"></i> Booking Sekarang
-          </a>
         </div>
       </div>
     </section>
@@ -864,13 +985,13 @@
           />
 
           <img
-            src="https://dongkrakusaha.com/gambarbebas/1526720260315-104155_barber 6.png"
+            src="https://dongkrakusaha.com/gambarbebas/1526720260315-104825_barber 8.png"
             data-aos="zoom-in"
             alt="Gallery Barbershop 3"
           />
 
           <img
-            src="https://dongkrakusaha.com/gambarbebas/1526720260315-104155_barber 5.png"
+            src="https://dongkrakusaha.com/gambarbebas/1526720260315-104155_barber 6.png"
             data-aos="zoom-in"
             alt="Gallery Barbershop 4"
           />
@@ -888,7 +1009,7 @@
           />
 
           <img
-            src="https://dongkrakusaha.com/gambarbebas/1526720260315-104825_barber 8.png"
+            src="https://dongkrakusaha.com/gambarbebas/1526720260315-104155_barber 5.png"
             data-aos="zoom-in"
             alt="Gallery Barbershop 7"
           />
