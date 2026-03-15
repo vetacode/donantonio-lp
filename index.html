@@ -140,7 +140,11 @@
         align-items: center;
         justify-content: center;
 
-        background: radial-gradient(circle at top right, #1a1a1a 0%, #050505 100%);
+        background: radial-gradient(
+          circle at top right,
+          #1a1a1a 0%,
+          #050505 100%
+        );
         position: relative;
         padding-top: 80px;
         overflow: hidden;
@@ -151,7 +155,11 @@
         position: absolute;
         width: 800px;
         height: 800px;
-        background: radial-gradient(circle, rgba(255, 179, 0, 0.08) 0%, rgba(0,0,0,0) 70%);
+        background: radial-gradient(
+          circle,
+          rgba(255, 179, 0, 0.08) 0%,
+          rgba(0, 0, 0, 0) 70%
+        );
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -656,8 +664,24 @@
         />
         <h2>About Don Antonio</h2>
 
-        <p style="max-width: 800px; margin: 0 auto; font-size: 18px; line-height: 1.8;">
-          <strong>Don Antonio Haircut & Shave</strong> bukan sekadar tempat potong rambut, melainkan pengalaman grooming premium di pusat kota Depok. Dipercaya oleh ratusan pria dan meraih <strong>rating ⭐5.0</strong>, kami konsisten memberikan standar tertinggi untuk <em>haircut modern</em>, <em>classic gentleman's cut</em>, hingga <em>hot towel shaving</em>. Memadukan keahlian para kapster profesional yang update dengan tren terbaru serta suasana yang rileks, kami menjamin setiap tamu keluar dengan tampilan terbaik dan kepuasan maksimal. Buktikan sendiri kualitasnya!
+        <p
+          style="
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.8;
+          "
+        >
+          <strong>Don Antonio Haircut & Shave</strong> bukan sekadar tempat
+          potong rambut, melainkan pengalaman grooming premium di pusat kota
+          Depok. Dipercaya oleh ratusan pria dan meraih
+          <strong>rating ⭐5.0</strong>, kami konsisten memberikan standar
+          tertinggi untuk <em>haircut modern</em>,
+          <em>classic gentleman's cut</em>, hingga <em>hot towel shaving</em>.
+          Memadukan keahlian para kapster profesional yang update dengan tren
+          terbaru serta suasana yang rileks, kami menjamin setiap tamu keluar
+          dengan tampilan terbaik dan kepuasan maksimal. Buktikan sendiri
+          kualitasnya!
         </p>
       </div>
     </section>
@@ -698,21 +722,39 @@
 
         <div class="gallery-grid">
           <img
-            src="https://dongkrakusaha.com/gambarbebas/1526720260315-102750_barber 1.png"
+            src="https://dongkrakusaha.com/gambarbebas/1526720260315-103536_barber 3.png"
             data-aos="zoom-in"
             alt="Gallery Barbershop 1"
           />
 
           <img
-            src="https://dongkrakusaha.com/gambarbebas/1526720260315-102750_barber 2.png"
+            src="https://dongkrakusaha.com/gambarbebas/1526720260315-103536_barber 2.png"
             data-aos="zoom-in"
             alt="Gallery Barbershop 2"
           />
 
           <img
-            src="https://dongkrakusaha.com/gambarbebas/1526720260315-102750_barber 3.png"
+            src="https://dongkrakusaha.com/gambarbebas/1526720260315-104155_barber 6.png"
             data-aos="zoom-in"
             alt="Gallery Barbershop 3"
+          />
+
+          <img
+            src="https://dongkrakusaha.com/gambarbebas/1526720260315-104155_barber 5.png"
+            data-aos="zoom-in"
+            alt="Gallery Barbershop 4"
+          />
+
+          <img
+            src="https://dongkrakusaha.com/gambarbebas/1526720260315-104155_barber 4.png"
+            data-aos="zoom-in"
+            alt="Gallery Barbershop 5"
+          />
+
+          <img
+            src="https://dongkrakusaha.com/gambarbebas/1526720260315-103536_barber 1.png"
+            data-aos="zoom-in"
+            alt="Gallery Barbershop 6"
           />
         </div>
       </div>
@@ -905,7 +947,7 @@
       }
 
       // Close mobile menu when clicking a link
-      document.querySelectorAll('.menu a').forEach(link => {
+      document.querySelectorAll('.menu a').forEach((link) => {
         link.addEventListener('click', () => {
           document.getElementById('menu').classList.remove('active');
         });
