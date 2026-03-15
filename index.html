@@ -143,16 +143,14 @@
       /* HERO */
 
       .hero {
-        min-height: 100vh;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        background: radial-gradient(
-          circle at top right,
-          #1a1a1a 0%,
-          #050505 100%
-        );
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70')
+            center/cover;
         position: relative;
         padding-top: 80px;
         overflow: hidden;
@@ -161,17 +159,16 @@
       .hero::before {
         content: '';
         position: absolute;
-        width: 800px;
-        height: 800px;
-        background: radial-gradient(
-          circle,
-          rgba(255, 179, 0, 0.08) 0%,
-          rgba(0, 0, 0, 0) 70%
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5) 0%,
+          transparent 50%,
+          rgba(0, 0, 0, 0.8) 100%
         );
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
         z-index: 1;
         pointer-events: none;
       }
